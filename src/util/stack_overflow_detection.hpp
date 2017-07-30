@@ -11,7 +11,7 @@
   #endif
   #include <iostream>
   #include <sigsegv.h>
-  #include <<cstdint>
+  #include <cstdint>
   #include <cstdio>
   #include <climits>
   #include <sys/types.h>
@@ -99,7 +99,7 @@
     pass++;
 
     std::cerr <<"Segmentation fault occured.\n"
-              <<".\n\n";
+              <<".\n\n"
     << std::endl;
 
     sigprocmask (SIG_SETMASK, &mainsigset, nullptr);
